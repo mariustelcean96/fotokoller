@@ -31,7 +31,26 @@ li a:hover {
 }
 
 /* Main body of the document */
-
+.body-container {
+    display: grid;
+    grid-template-columns: 200px 900px;
+}
+.left {
+    width: 200px;
+    height: 100%;
+    margin: 10px;
+    /*background-color: lightblue;*/
+}
+.logo-left {
+    width: 150px;
+    margin: 10px 25px;
+}
+.right {
+    width: 900px;
+    height: 1400px;
+    margin: 20px;
+    /*background-color: lightcoral;*/
+}
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
