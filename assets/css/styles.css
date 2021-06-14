@@ -58,7 +58,7 @@ background-color: #111;
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
-    float: left;
+    float: right;
     width: auto;
 }
 
