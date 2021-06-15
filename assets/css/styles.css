@@ -69,7 +69,7 @@ div.gallery img {
     display: block;
 }
 
-div.descr {
+.descr {
     padding: 16px;
     text-align: center;
 }
