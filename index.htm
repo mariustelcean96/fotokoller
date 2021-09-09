@@ -25,10 +25,94 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+.img-cs {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+/*Menu bar*/
+ul {
+  list-style-type: none;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    display: inline-block;
+}
+
+li a:hover:not(.active){
+background-color: rgb(18, 12, 124);
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color:#1f2582;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #211c1c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
 </style>
 <body>
-
-<!-- Sidebar -->
+<!-- Menu bar -->
+<ul>
+  <li><a class="active" href="index.htm">Acasă</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Portofoliu &#128210;</a>
+    <div class="dropdown-content">
+      <a href="cartiVizita.htm">Cărţi de vizită</a>
+      <a href="pixuriImprimate.htm">Pixuri imprimate</a>
+      <a href="tricouri.htm">Tricouri</a>
+      <a href="siteSerigrafice.htm">Site serigrafice</a>
+      <a href="autocolante.htm">Autocolante</a>
+      <a href="legitimatii.htm">Legitimaţii</a>
+      <a href="agende.htm">Agende</a>
+      <a href="bannere.htm">Bannere</a>
+      <a href="broderie.htm">Broderie</a>
+    </div>
+  </li>
+  <li><a href="index.htm">Istoric companie &#8987;</a></li>
+  <li><a href="contact.htm">Contact &#128172;</a></li>
+</ul>
+<!-- Sidebar 
 <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
     <i class="fa fa-remove"></i>
@@ -45,14 +129,14 @@ div.desc {
     <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
     
   </div>
-</nav>
+</nav>-->
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
 
 <!-- Header -->
 <div class="w3-opacity">
-<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<!--<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>--> 
 <div class="w3-clear"></div>
 <header class="w3-center w3-margin-bottom">
 </header>
@@ -62,14 +146,14 @@ div.desc {
 <h2>Selecţie de mostre</h2>
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
   <div class="w3-third">
-    <img src="assets/images/mostre/carti-vizita/taxi/vioheb-max1419x789.jpg" style="width:100%" alt="Carte de vizită pentru un taximetrist local.">
+    <img src="assets/images/mostre/carti-vizita/taxi/vioheb-max1419x789.jpg" class="img-cs" style="width:90%" alt="Carte de vizită pentru un taximetrist local.">
     <div class="desc"><h3><b>Viohebmax</b></h3>
       <p>D1</p>
     </div>
   </div>
 
   <div class="w3-third">
-    <img src="assets/images/mostre/carti-vizita/doctori/cl-chir-orl-max-fac-m-shapira1419x789-1.jpg" style="width:100%" alt="Carte de vizită pentru un chirurg (varianta 1).">
+    <img src="assets/images/mostre/carti-vizita/doctori/cl-chir-orl-max-fac-m-shapira1419x789-1.jpg" class="img-cs" style="width:90%" alt="Carte de vizită pentru un chirurg (varianta 1).">
     <div class="desc">
       <h3><b>Clinica de chirurgie ...</b></h3>
       <p>D2</p>
@@ -78,7 +162,7 @@ div.desc {
   </div>
 
   <div class="w3-third">
-    <img src="assets/images/mostre/carti-vizita/doctori/cl-chir-orl-max-fac-m-shapira1419x789-2.jpg" style="width:100%" alt="Carte de vizită pentru un chirurg (varianta 2).">
+    <img src="assets/images/mostre/carti-vizita/doctori/cl-chir-orl-max-fac-m-shapira1419x789-2.jpg" class="img-cs" style="width:90%" alt="Carte de vizită pentru un chirurg (varianta 2).">
     <div class="desc">
       <h3><b>Clinica de chirurgie ...</b></h3>
       <p>D3</p>
@@ -87,14 +171,14 @@ div.desc {
 </div>
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
     <div class="w3-third">
-      <img src="assets/images/mostre/carti-vizita/cv-personale/cv-TelceanMT1370x777.jpg" style="width:100%" alt="Carte de vizită personală.">
+      <img src="assets/images/mostre/carti-vizita/cv-personale/cv-TelceanMT1370x777.jpg" class="img-cs" style="width:90%" alt="Carte de vizită personală.">
       <div class="desc"><h3><b>Una din variantele mai moderne ale cărţii de vizită proprii</b></h3>
         <p>D4</p>
       </div>
     </div>
   
     <div class="w3-third">
-      <img src="assets/images/mostre/ecusoane/batalionul-812-inf-red.jpg" style="width:50%; margin: 0 auto; display: block;" alt="Ecuson pentru Forţa de reacţie rapidă, Batalionul 812 Bistriţa.">
+      <img src="assets/images/mostre/ecusoane/batalionul-812-inf-red.jpg" class="img-cs" alt="Ecuson pentru Forţa de reacţie rapidă, Batalionul 812 Bistriţa.">
       <div class="desc">
         <h3><b>Ecuson brodat pentru Batalionul 812 Bistriţa</b></h3>
         <p>D5</p>
@@ -103,7 +187,7 @@ div.desc {
     </div>
   
     <div class="w3-third">
-      <img src="assets/images/mostre/embleme/emblema-grup-scolar-silvic-nasaud-726x756.jpg" style="width:75%; margin: 0 auto; display: block;" alt="Grup şcolar silvic Năsăud.">
+      <img src="assets/images/mostre/embleme/emblema-grup-scolar-silvic-nasaud-726x756.jpg" class="img-cs" alt="Grup şcolar silvic Năsăud.">
       <div class="desc">
         <h3><b>Grup şcolar silvic Năsăud</b></h3>
         <p>D6</p>
@@ -112,30 +196,79 @@ div.desc {
 </div>
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
     <div class="w3-third">
-      <img src="assets/images/mostre/embleme/emb-sc-eur-l-blaga-347x248.jpg" style="width:75%; margin: 0 auto; display: block;" alt="Emblemă Şcoala Lucian Blaga Bistriţa.">
+      <img src="assets/images/mostre/embleme/emb-sc-eur-l-blaga-347x248.jpg" class="img-cs" alt="Emblemă Şcoala Lucian Blaga Bistriţa.">
       <div class="desc"><h3><b>Emblemă Şcoala Lucian Blaga Bistriţa</b></h3>
-        <p>D4</p>
+        <p>D7</p>
       </div>
     </div>
   
     <div class="w3-third">
-      <img src="assets/images/mostre/embleme/liceulSportivBta-248x316.jpg" style="width:50%; margin: 0 auto; display: block;" alt="Modelul 1 de emblemă pentru Liceul cu program sportiv Bistriţa.">
+      <img src="assets/images/mostre/embleme/liceulSportivBta-248x316.jpg" class="img-cs" alt="Modelul 1 de emblemă pentru Liceul cu program sportiv Bistriţa.">
       <div class="desc">
         <h3><b>Modelul 1 de emblemă pentru Liceul cu program sportiv Bistriţa</b></h3>
-        <p>D5</p>
+        <p>D8</p>
           
       </div>
     </div>
   
     <div class="w3-third">
-      <img src="assets/images/mostre/embleme/liceulSportivBta-2-248x299.jpg" style="width:50%; margin: 0 auto; display: block;" alt="Modelul 2 de emblemă pentru Liceul cu program sportiv Bistriţa.">
+      <img src="assets/images/mostre/embleme/scGenerala5LBlaga-295x248.jpg" class="img-cs" alt="Legitimaţie pentru Şc. Gen. nr. 5 Lucian Blaga Bistriţa.">
       <div class="desc">
-        <h3><b>Modelul 2 de emblemă pentru Liceul cu program sportiv Bistriţa.</b></h3>
-        <p>D6</p>
+        <h3><b>Legitimaţie pentru Şc. Gen. nr. 5 Lucian Blaga Bistriţa</b></h3>
+        <p>D9</p>
       </div>
     </div>
 </div>
-  
+<div class="w3-row" id="myGrid" style="margin-bottom:20px">
+  <div class="w3-third">
+    <img src="assets/images/mostre/embleme/liceulSportivBta-3-248x301.jpg" class="img-cs" alt="Model emblemă culoare gri, Liceul Sportiv Bistriţa.">
+    <div class="desc"><h3><b>Model emblemă culoare gri, Liceul Sportiv Bistriţa</b></h3>
+      <p>D10</p>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <img src="assets/images/mostre/embleme/securitySystemsIntervPaza-248x287.jpg" class="img-cs" alt="Modelul 1 de emblemă pentru Liceul cu program sportiv Bistriţa.">
+    <div class="desc">
+      <h3><b>Modelul 1 de emblemă pentru Liceul cu program sportiv Bistriţa</b></h3>
+      <p>D11</p>
+        
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <img src="assets/images/mostre/embleme/colMilitarLicealStCelMare-248x259.jpg" class="img-cs" alt="Emblemă pentru Col. Militar Liceal Şt. Cel Mare Câmpulung Moldovenesc.">
+    <div class="desc">
+      <h3><b>Emblemă pentru Col. Militar Liceal Şt. Cel Mare Câmpulung Moldovenesc</b></h3>
+      <p>D12</p>
+    </div>
+  </div>
+</div> 
+<div class="w3-row" id="myGrid" style="margin-bottom:20px">
+  <div class="w3-third">
+    <img src="assets/images/mostre/embleme/grScolarSilvicNasaud-248x309.jpg" class="img-cs" alt="Model emblemă Grup Şcolar Silvic Năsăud.">
+    <div class="desc"><h3><b>Model emblemă Grup Şcolar Silvic Năsăud</b></h3>
+      <p>D13</p>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <img src="assets/images/mostre/embleme/dirPtSportBN-291x248.jpg" class="img-cs" alt="Model emblemă Direcţia pentru sport Bistriţa-Năsăud.">
+    <div class="desc">
+      <h3><b>Model emblemă Direcţia pentru sport Bistriţa-Năsăud</b></h3>
+      <p>D14</p>
+        
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <img src="assets/images/mostre/pixuri/pixAmicii-albastru-229x596.png" class="img-cs" alt="Model imprimat la 3 feţe, albastru, de pix pentru Amicii Building S.R.L.">
+    <div class="desc">
+      <h3><b>Model imprimat la 3 feţe, albastru, de pix pentru Amicii Building S.R.L.</b></h3>
+      <p>D15</p>
+    </div>
+  </div>
+</div>  
 <!-- End Page Content -->
 </div>
 
@@ -157,7 +290,7 @@ div.desc {
   <a href="#"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   
   <p class="w3-medium"><b><></b> pe baza unui şablon <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <p class="w3-medium">Actualizat 8 septembrie 2021</p>
+  <p class="w3-medium">Actualizat 9 septembrie 2021</p>
 </footer>
  
 <script>
