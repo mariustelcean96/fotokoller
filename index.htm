@@ -80,17 +80,14 @@ li.dropdown {display: inline-block;}
 .dropdown:hover .dropdown-content {display: block;}
 .active {background-color: #e0c54b;}
 .sp-cont {margin: 15px;}
-.li-mo {
-  margin-right: 3px;
-  padding: 3px 5px;
-  color:aliceblue;
-  font-size: 26px;
-  background-color:#333;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+button {
+  cursor: pointer;
+  box-shadow: 0 2px #a7964c;
   letter-spacing: 2px;
-  line-height: 1.8;
-  white-space: nowrap;
+  margin: 3px;
+}
+.hide {
+    display: none;
 }
 </style>
 <body>
@@ -100,7 +97,7 @@ li.dropdown {display: inline-block;}
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Portofoliu &#128210;</a>
     <div class="dropdown-content">
-      <a href="cartiVizita.htm">Cărţi de vizită</a>
+      <a href="cartiDeVizita.htm">Cărţi de vizită</a>
       <a href="pixuriImprimate.htm">Pixuri imprimate</a>
       <a href="tricouri.htm">Tricouri</a>
       <a href="siteSerigrafice.htm">Site serigrafice</a>
@@ -128,37 +125,41 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="sp-cont">
-  <span class="li-mo">carţi de vizită</span>
-  <span class="li-mo">pixuri imprimate</span>
-  <span class="li-mo">tricouri imprimate</span>
-  <span class="li-mo">site serigrafice</span>
-  <span class="li-mo">autocolante</span>
-  <span class="li-mo">legitimaţii</span>
-  <span class="li-mo">embleme brodate şi imprimate</span>
-  <span class="li-mo">steaguri</span>
-  <span class="li-mo">numere matricole</span>
-  <span class="li-mo">bannere</span>
-  <span class="li-mo">agende</span>
-  <span class="li-mo">umbrele</span>
+  <button onclick="ascundeMostrele()">ascunde/ arată mostrele</button>
+  <button onclick="aratăCărțiVizită()">carţi de vizită</button> <!--carteVizita-->
+  <button onclick="aratăPixuri()">pixuri imprimate</button> <!--pix-->
+  <button>tricouri imprimate</button>
+  <button>site serigrafice</button> <!--sita-->
+  <button>autocolante</button>
+  <button>legitimaţii/ etichete</button> <!--legitimatie-->
+  <button onclick="aratăEmbleme()">embleme brodate şi imprimate</button> <!--emblema-->
+  <button>steaguri</button>
+  <button>numere matricole</button>
+  <button>bannere</button>
+  <button>agende</button>
+  <button>umbrele</button>
+  <button>fanioane</button> <!--fanion-->
+  <button>brelocuri</button> <!--breloc-->
+  <button>insigne</button> <!--insigna-->
 </div>
 
 <!-- Photo Grid -->
 <div class="w3-row" id="myGrid" style="margin-bottom:20px; margin-top: 30px;">
-  <div class="w3-third">
+  <div class="w3-third carteVizita">
     <img src="assets/images/mostre/carti-vizita/taxi/vioheb-max1419x789.jpg" class="img-cs" style="width:90%" width="1419" heigh="789" alt="Carte de vizită pentru un taximetrist local.">
     <div class="desc">
       <p>D1</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third carteVizita">
     <img src="assets/images/mostre/carti-vizita/doctori/cl-chir-orl-max-fac-m-shapira1419x789-1.jpg" class="img-cs" style="width:90%" alt="Carte de vizită pentru un chirurg (varianta 1).">
     <div class="desc">
       <p>D2</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third carteVizita">
     <img src="assets/images/mostre/carti-vizita/doctori/cl-chir-orl-max-fac-m-shapira1419x789-2.jpg" class="img-cs" style="width:90%" alt="Carte de vizită pentru un chirurg (varianta 2).">
     <div class="desc">
       <p>D3</p>
@@ -167,14 +168,14 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-    <div class="w3-third">
+    <div class="w3-third carteVizita">
       <img src="assets/images/mostre/carti-vizita/cv-personale/cv-TelceanMT1370x777.jpg" class="img-cs" style="width:90%" alt="Carte de vizită personală.">
       <div class="desc">
         <p>D4</p>
       </div>
     </div>
   
-    <div class="w3-third">
+    <div class="w3-third emblema">
       <img src="assets/images/mostre/ecusoane/batalionul-812-inf-red.jpg" class="img-cs" alt="Ecuson pentru Forţa de reacţie rapidă, Batalionul 812 Bistriţa.">
       <div class="desc">
         <p>D5</p>
@@ -182,7 +183,7 @@ li.dropdown {display: inline-block;}
       </div>
     </div>
   
-    <div class="w3-third">
+    <div class="w3-third emblema">
       <img src="assets/images/mostre/embleme/emblema-grup-scolar-silvic-nasaud-726x756.jpg" class="img-cs" alt="Grup şcolar silvic Năsăud.">
       <div class="desc">
         <p>D6</p>
@@ -191,21 +192,21 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-    <div class="w3-third">
+    <div class="w3-third emblema">
       <img src="assets/images/mostre/embleme/emb-sc-eur-l-blaga-347x248.jpg" class="img-cs" alt="Emblemă Şcoala Lucian Blaga Bistriţa.">
       <div class="desc">
         <p>D7</p>
       </div>
     </div>
   
-    <div class="w3-third">
+    <div class="w3-third emblema">
       <img src="assets/images/mostre/embleme/liceulSportivBta-248x316.jpg" class="img-cs" alt="Modelul 1 de emblemă pentru Liceul cu program sportiv Bistriţa.">
       <div class="desc">
         <p>D8</p>
       </div>
     </div>
   
-    <div class="w3-third">
+    <div class="w3-third emblema">
       <img src="assets/images/mostre/embleme/scGenerala5LBlaga-295x248.jpg" class="img-cs" alt="Legitimaţie pentru Şc. Gen. nr. 5 Lucian Blaga Bistriţa.">
       <div class="desc">
         <p>D9</p>
@@ -214,21 +215,21 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/liceulSportivBta-3-248x301.jpg" class="img-cs" alt="Model emblemă culoare gri, Liceul Sportiv Bistriţa.">
     <div class="desc">
       <p>D10</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/securitySystemsIntervPaza-248x287.jpg" class="img-cs" alt="Modelul 1 de emblemă pentru Liceul cu program sportiv Bistriţa.">
     <div class="desc">
       <p>D11</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/colMilitarLicealStCelMare-248x259.jpg" class="img-cs" alt="Emblemă pentru Col. Militar Liceal Şt. Cel Mare Câmpulung Moldovenesc.">
     <div class="desc">
       <p>D12</p>
@@ -237,21 +238,21 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/grScolarSilvicNasaud-248x309.jpg" class="img-cs" alt="Model emblemă Grup Şcolar Silvic Năsăud.">
     <div class="desc">
       <p>D13</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/dirPtSportBN-291x248.jpg" class="img-cs" alt="Model emblemă Direcţia pentru sport Bistriţa-Năsăud.">
     <div class="desc">
       <p>D14</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third pix">
     <img src="assets/images/mostre/pixuri/pixAmicii-albastru-229x596.png" class="img-cs" style="width: 30%" alt="Model imprimat la 3 feţe, albastru, de pix pentru Amicii Building S.R.L.">
     <div class="desc">
       <p>D15</p>
@@ -260,21 +261,21 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/scEurLucBlagaBta-284x248.jpg" class="img-cs" alt="Model emblemă Şcoala Europeană Lucian Blaga Bistriţa.">
     <div class="desc">
       <p>D16</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/liceulSportivBta-2-248x301.jpg" class="img-cs" alt="Modelul 2 de emblemă pentru Liceul Sportiv Bistriţa.">
     <div class="desc">
       <p>D17</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/ecusoane/batalionul-814-tancuri-248x326.jpg" class="img-cs" alt="Ecuson brodat Batalionul 814 Tancuri Forţă activă.">
     <div class="desc">
       <p>D18</p>
@@ -283,21 +284,21 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/cnamBta-250x248.jpg" class="img-cs" alt="Emblemă Col. Naţ. A. Mureşanu, Bistriţa.">
     <div class="desc">
       <p>D19</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/liceulSportivSV-248x289.jpg" class="img-cs" alt="Model de emblemă pentru Liceul Sportiv Suceava.">
     <div class="desc">
       <p>D20</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/grScolarSilvicNasaud-2-248x301.jpg" class="img-cs" alt="Modelul 2 de emblemă a Grupului Şcolar Silvic din Năsăud.">
     <div class="desc">
       <p>D21</p>
@@ -306,21 +307,21 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/scGenMEminescuNasaud-351x212.jpg" class="img-cs" style="width: 80%;" alt="Emblemă pentru Şcoala Generală Mihai Eminescu din Năsăud.">
     <div class="desc">
       <p>D22</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/batalionul811Infanterie-248x266.jpg" class="img-cs" alt="Model de emblemă pentru Batalionul 811 Infanterie, Forţa de reacţie rapidă.">
     <div class="desc">
       <p>D23</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/grScolarSilvicNasaud-3-280x166.jpg" class="img-cs" style="width: 80%;" alt="Modelul 3 de emblemă a Grupului Şcolar Silvic din Năsăud.">
     <div class="desc">
       <p>D24</p>
@@ -329,21 +330,21 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fanion-lionsClubIntDistrict124-220x351.jpg" class="img-cs" style="width: 65%;" alt="Fanion pentru Lions Club Internațional, Districtul 124, Lions Club Zalău.">
     <div class="desc">
       <p>D25</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fanionBistrita-179x351.jpg" class="img-cs" alt="Fanion cu emblema orașului Bistriţa: Biserica Evanghelică.">
     <div class="desc">
       <p>D26</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fanLicSportBta-180x351.jpg" class="img-cs" style="width: 50%;" alt="Fanion pentru Liceul Sportiv Bistriţa.">
     <div class="desc">
       <p>D27</p>
@@ -352,21 +353,21 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fotbalClubInterViisoaraBta-168x351.jpg" class="img-cs" style="width: 50%;" alt="Fanion pentru Clubul de fotbal Inter Viișoara, Bistriţa.">
     <div class="desc">
       <p>D28</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fanTricolorRom-351x200.jpg" class="img-cs" style="width: 60%;" alt="Fanion cu tricolorul României.">
     <div class="desc">
       <p>D29</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fanVaticanCityState-237x351.jpg" class="img-cs" style="width: 70%;" alt="Fanion pentru statul Vatican.">
     <div class="desc">
       <p>D30</p>
@@ -375,21 +376,21 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fanLPSCSSSv-202x351.jpg" class="img-cs" alt="Modelul 1 de fanion pentru LPS CSS Suceava.">
     <div class="desc">
       <p>D31</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fanLPSCSSSv-2-239x351.jpg" class="img-cs" style="width: 60%;" alt="Modelul 2 de fanion pentru LPS CSS Suceava.">
     <div class="desc">
       <p>D32</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/embleme/embRomProtectiaCivila-271x248.jpg" class="img-cs" style="width: 90%;" alt="Emblemă pentru Protecția civilă, România.">
     <div class="desc">
       <p>D33</p>
@@ -398,21 +399,21 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third breloc">
     <img src="assets/images/mostre/brelocuri/breloc44HS-248x310.jpg" class="img-cs" style="width: 60%;" alt="Breloc turcoaz inscripționat cu numărul 44.">
     <div class="desc">
       <p>D34</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third breloc">
     <img src="assets/images/mostre/brelocuri/brelocturcoaznr325-248x297.jpg" class="img-cs" style="width: 60%;" alt="Breloc turcoaz inscripționat cu numărul 325.">
     <div class="desc">
       <p>D35</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/tesaturiImprimate/tesaturaRosiePSD-248x249.jpg" class="img-cs" style="width: 70%;" alt="Model de imprimerie albă pe țesătură roșie tip pungă din fibră textilă.">
     <div class="desc">
       <p>D36</p>
@@ -421,21 +422,21 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/tesaturiImprimate/papucCasa/papucVittoriaLibertyBeauty-180x351.jpg" class="img-cs" style="width: 60%;" alt="Model de papuc de casă imprimat Vittoria Liberty Beauty Farm, Montecatini Terme.">
     <div class="desc">
       <p>D37</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/ecusoane/ecusonOlteanu-247x96.jpg" class="img-cs" style="width: 90%;" alt="Ecuson bej, oreptunghiular, cu prindere scai.">
     <div class="desc">
       <p>D38</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third insigna">
     <img src="assets/images/mostre/insigne/sosFaraDroguriDSPBistrita-249x248.jpg" class="img-cs" style="width: 70%;" alt="Insignă rotundă S.O.S. Fără droguri!, pentru DSP Bistriţa-Năsăud.">
     <div class="desc">
       <p>D39</p>
@@ -444,7 +445,7 @@ li.dropdown {display: inline-block;}
 </div> 
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/tesaturiImprimate/worldWinterWeekMCiucTusnad-248x349.jpg" class="img-cs" style="width: 70%;" alt="Imprimerie pe țesătură galbenă cu scris negru pentru World Winter Week, Miercurea Ciuc.">
     <div class="desc">
       <p>D37</p>
@@ -467,21 +468,21 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third emblema">
     <img src="assets/images/mostre/ecusoane/ecsnMihaelaInimaBucov-610x225.jpg" class="img-cs" style="width: 80%;" alt="Model ecuson dreptunghiular, auriu, pentru Mihaela de la Inima Bucovinei.">
     <div class="desc">
       <p>D40</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third insigna">
     <img src="assets/images/mostre/insigne/insgnScClsI-IVFetesti-338x297.jpg" class="img-cs" style="width: 80%;" alt="Insigna cu ac, rotundă, aurie, pentru Școala cu clasele I - VIII, Adâncata, Fetești.">
     <div class="desc">
       <p>D41</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third breloc">
     <img src="assets/images/mostre/brelocuri/brelocChevroletMaro-300x521.jpg" class="img-cs" style="width: 55%;" alt="Breloc din piele, maro cu sigla și cuvântul Chevrolet.">
     <div class="desc">
       <p>D42</p>
@@ -490,21 +491,21 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third breloc">
     <img src="assets/images/mostre/brelocuri/brelocGriNr12-352x624.jpg" class="img-cs" alt="Model de breloc oval, gri, inscripționat cu nr. 12.">
     <div class="desc">
       <p>D43</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third breloc">
     <img src="assets/images/mostre/brelocuri/brelocGriInimaBucovineiSV-362x667.jpg" class="img-cs" style="width: 50%;" alt="Model de breloc oval, gri, inscripționat Inima Bucovinei, Frasin Sv România.">
     <div class="desc">
       <p>D44</p>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third breloc">
     <img src="assets/images/mostre/brelocuri/brelocAuriuHotelMonteCarlo-415x650.jpg" class="img-cs" style="width: 50%;" alt="Model de breloc oval, auriu, inscripționat Hotel Monte Carlo ***.">
     <div class="desc">
       <p>D45</p>
@@ -520,14 +521,14 @@ li.dropdown {display: inline-block;}
       <p>D46</p>
     </div>
 </div>
-<div class="w3-third">
+<div class="w3-third pix">
     <img src="assets/images/mostre/pixuri/serbis-pix-rosu.746x253.jpg" class="img-cs" style="width: 35%;" alt="Pix roșu, 
     imprimat pe o față, cu textul www.serbis.ro.">
     <div class="desc">
       <p>D47</p>
     </div>
 </div>
-  <div class="w3-third">
+  <div class="w3-third legitimatie">
     <img src="assets/images/mostre/legitimatii/legiCalatCartonatPortocaliu-685x302.jpg" class="img-cs" style="width: 99%;" alt="Model de legitimație de călătorie tip carnet de notițe, hârtie cartonată.">
     <div class="desc">
       <p>D48</p>
@@ -536,7 +537,7 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third legitimatie">
     <img src="assets/images/mostre/etichete/etic-LegumeDenProdOrig-396x302.jpg" class="img-cs" style="width: 80%;" alt="Etichetă plastifiată 
     pentru vânzarea legumelor (denumire produs, loc. și țara de origine, data recoltării și prețul).">
     <div class="desc">
@@ -544,7 +545,7 @@ li.dropdown {display: inline-block;}
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third legitimatie">
     <img src="assets/images/mostre/etichete/etic-MuraturiOriCons-399x294.jpg" class="img-cs" style="width: 80%;" alt="Etichetă plastifiată 
     pentru vânzarea murăturilor (denumire produs, loc. de origine, data conservării și prețul/borcan).">
     <div class="desc">
@@ -552,7 +553,7 @@ li.dropdown {display: inline-block;}
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third sita">
     <img src="assets/images/mostre/filmeSerigrafice/filmFotoAsocClubSportScFotValFrum-206x268.jpg" class="img-cs" alt="Film serigrafic pentru
     Asociația Clubul Sportiv Școala de fotbal Valea Frumoasei.">
     <div class="desc">
@@ -562,7 +563,7 @@ li.dropdown {display: inline-block;}
 </div>
   
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third breloc">
     <img src="assets/images/mostre/brelocuri/brelocSculptatLemn321-389x492.jpg" class="img-cs" alt="Breloc din lemn
     închis la culoare, oval, pe care scrie cu litere aurii numărul 321.">
     <div class="desc">
@@ -570,7 +571,7 @@ li.dropdown {display: inline-block;}
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fanHandbalClubRaalBistrita-330x402.jpg" class="img-cs" alt="Fanion alb
     inscripționat Handbal Club RAAL Bistriţa, iar sub o minge deasupra unui tricolor.">
     <div class="desc">
@@ -578,7 +579,7 @@ li.dropdown {display: inline-block;}
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fanHandbalClubRaalBistritaVerso-334x458.jpg" style="width: 45%;" class="img-cs" alt="Fanion alb, 
     versoul celui de stânga, inscripționat RAAL, radiatoare din aluminiu, Bistriţa, iar sub numere de telefon și fax.">
     <div class="desc">
@@ -588,7 +589,7 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fanFCGloriaBta-326x702.jpg" class="img-cs" style="width: 45%;" 
     alt="Fanion cu snur pentru F.C. Gloria Bistrița, cu sigla clubului și textul club fondat în 1922.">
     <div class="desc">
@@ -596,7 +597,7 @@ li.dropdown {display: inline-block;}
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fanFCGloriaBtaVerso-342x663.jpg" class="img-cs" alt="Verso de fanion cu 
     snur pentru F.C. Gloria Bistrița, cu sigla clubului și textul Promovată în divizia națională în anul 1990.">
     <div class="desc">
@@ -604,7 +605,7 @@ li.dropdown {display: inline-block;}
     </div>
   </div>
 
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fanOtinekSportBta-246x367.jpg" style="width: 60%;" class="img-cs" alt="Fanion
     pentru OTINEK Sport Bistriţa echipamente sportive.">
     <div class="desc">
@@ -614,7 +615,7 @@ li.dropdown {display: inline-block;}
 </div>
 
 <div class="w3-row" id="myGrid" style="margin-bottom:20px">
-  <div class="w3-third">
+  <div class="w3-third fanion">
     <img src="assets/images/mostre/fanioane/fanOtinekSportBtaVerso-286x470.jpg" class="img-cs" style="width: 60%;" 
     alt="Verso de fanion pentru OTINEK Sport Bistriţa, adresa firmei și tipul de echipamente sportive produse: 
     treninguri antrenament, treninguri prezentare, etc.">
@@ -624,16 +625,14 @@ li.dropdown {display: inline-block;}
   </div>
 
   <div class="w3-third">
-    <img src="" class="img-cs" alt="Verso de fanion cu 
-    snur pentru F.C. Gloria Bistrița, cu sigla clubului și textul Promovată în divizia națională în anul 1990.">
+    <img src="" class="img-cs" alt="">
     <div class="desc">
       <p>D59</p>
     </div>
   </div>
 
   <div class="w3-third">
-    <img src="" style="width: 60%;" class="img-cs" alt="Fanion
-    pentru OTINEK Sport Bistriţa echipamente sportive.">
+    <img src="" style="width: 60%;" class="img-cs" alt="">
     <div class="desc">
       <p>D60</p>
     </div>
@@ -658,10 +657,41 @@ li.dropdown {display: inline-block;}
   <a href="https://www.facebook.com/telceanu.marius"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
   <a href="#"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   <p class="w3-medium"><b><></b> pe baza unui şablon <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <p class="w3-medium">Actualizat 22 septembrie 2021</p>
+  <p class="w3-medium">Actualizat 2022</p>
 </footer>
  
 <script>
+  function ascundeMostrele() {
+    const nodelist = document.querySelectorAll('#myGrid > .w3-third');
+    for (let i = 0; i < nodelist.length; i++) {
+      nodelist[i].classList.toggle('hide');
+    }
+  }
+
+  function aratăCărțiVizită() {
+    ascundeMostrele();
+    const nodelistCV = document.querySelectorAll('.carteVizita');
+      for (let i = 0; i < nodelistCV.length; i++) {
+        nodelistCV[i].classList.toggle('hide');
+      }
+    }
+
+  function aratăPixuri() {
+    ascundeMostrele();
+    const nodelistPix = document.querySelectorAll('.pix');
+      for (let i = 0; i < nodelistPix.length; i++) {
+        nodelistPix[i].classList.toggle('hide');
+      }
+    }
+  
+    function aratăEmbleme() {
+    ascundeMostrele();
+    const nodelistEmb = document.querySelectorAll('.emblema');
+      for (let i = 0; i < nodelistEmb.length; i++) {
+        nodelistEmb[i].classList.toggle('hide');
+      }
+    }
+
 </script>
 
 </body>
