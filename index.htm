@@ -89,6 +89,13 @@ button {
 .hide {
     display: none;
 }
+.activeBttn {
+  background-color: #e0c54b;
+  box-shadow: 0 2px #776928;
+  border-radius: 3px;
+  border: 1px solid #9d978f ;
+  font-size: 12px;
+}
 </style>
 <body>
 <!-- Menu bar -->
@@ -691,6 +698,13 @@ button {
         nodelistEmb[i].classList.toggle('hide');
       }
     }
+
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        button.classList.toggle('activeBttn');
+      });
+    });
 
 </script>
 
