@@ -16,11 +16,11 @@
 <body>
 <!-- Menu bar -->
 <ul>
-  <li><a class="active" href="index.htm">Acasă</a></li>
+  <li><a href="index.htm">Acasă</a></li>
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Portofoliu &#128210;</a>
     <div class="dropdown-content">
-      <a href="cartiVizita.htm">Cărţi de vizită</a>
+      <a href="cartiDeVizita.htm">Cărţi de vizită</a>
       <a href="pixuriImprimate.htm">Pixuri imprimate</a>
       <a href="tricouri.htm">Tricouri</a>
       <a href="siteSerigrafice.htm">Site serigrafice</a>
@@ -30,9 +30,10 @@
       <a href="bannere.htm">Bannere</a>
       <a href="broderie.htm">Broderie</a>
       <a href="fanioane.htm">Fanioane</a>
+      <a href="http://www.360x.ro/">Tururi virtuale - Dan Nistor</a>
     </div>
   </li>
-  <li><a href="index.htm">Istoric companie &#8987;</a></li>
+  <li><a class="active" href="index.htm">Istoric companie &#8987;</a></li>
   <li><a href="contact.htm">Contact &#128172;</a></li>
 </ul>
 
@@ -50,25 +51,29 @@
 <!-- Photo Grid -->
 <div class="w3-row" id="myGrid" style="margin-bottom:20px; margin-top: 30px;">
  <div class="w3-third">
-    <img src="" class="img-cs" style="width:90%" alt="">
+    <img src="/assets/images/pozeProfil/danNistor200x200.jpg" class="img-cs" style="width:60%" alt="Poză a lui Nistor preluată de pe Linkedin.">
     <div class="desc">
-      <p></p>
+      <p><strong>Dan Nistor</strong> – membru fondator</p>
+      <a target="_blank" href="https://www.linkedin.com/in/dan-nistor-82573164/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a target="_blank" href="http://www.360x.ro/"><i class="fa fa-globe w3-hover-opacity"></i></a>
     </div>
   </div>
   
   <div class="w3-third ">
     <img src="" class="img-cs" style="width:90%" alt="">
     <div class="desc">
-      <p></p>
+      <p>Descriere a momentelor care au condus la dorința de a înființa compania.</p>
     </div>
   </div>
 
   <div class="w3-third">
-    <img src="" class="img-cs" style="width:90%" alt="">
+    <img src="/assets/images/pozeProfil/MTTelcean1200x1600.jpg" class="img-cs" style="width:50%" alt="">
     <div class="desc">
-      <p></p>
+      <p><strong>Telcean Marius-Tiberiu</strong> - membru fondator</p>
+      <a target="_blank" href="https://www.linkedin.com/in/telceanu-marius-848331160/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
     </div>
   </div>
+
 </div>
 
 
@@ -91,25 +96,10 @@
   <a href="https://www.facebook.com/telceanu.marius"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
   <a href="#"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   <p class="w3-medium"><b><></b> pe baza unui şablon <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <p class="w3-medium">Actualizat 8 ianuarie 2022</p>
+  <p class="w3-medium">Actualizat 15 ianuarie 2022</p>
 </footer>
  
-<script>
-function ascundeMostrele() {
-    const nodelist = document.querySelectorAll('#myGrid > .w3-third');
-    for (let i = 0; i < nodelist.length; i++) {
-      nodelist[i].classList.toggle('hide');
-    }
-  }
-function cvPers() {
-    ascundeMostrele();
-    const cvPersonale = document.querySelectorAll('.personala');
-    cvPersonale.forEach(cvPersonala => {
-      cvPersonala.classList.toggle('hide');
-    });
-}  
-
-
+<script>  
 </script>
 
 </body>
