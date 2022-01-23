@@ -14,83 +14,10 @@
 <link rel="stylesheet" href="assets/css/styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {
-  background-color: rgb(223, 198, 115);
-  font-family: "Ubuntu Mono", arial;
-}
-h2 {
-  color: #656565; 
-  font-size: 28px; 
-  margin-left: 5px;
-}
-img {margin-bottom: -7px}
-.w3-row-padding img {margin-bottom: 12px}
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-.img-cs {
-  display: block;
-  margin: 0 auto;
-  width: 50%;
-}
-/*Menu bar*/
-ul {
-  list-style-type: none;
-  background-color: #ece6c8;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-li {
-  float: left;
-}
-li a, .dropbtn {
-  text-decoration: none;
-  text-align: center;
-  padding: 14px 16px;
-  color: rgba(74,74,74,0.7);
-  font-size: 1em;
-  font-weight: bold;
-  display: inline-block;
-  letter-spacing: 0.2px;
-}
-li a:hover:not(.active){
-  background-color: #ebd46d;
-}
-li a:hover, .dropdown:hover .dropbtn {
-  background-color:#ebd46d;
-}
-li.dropdown {display: inline-block;}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ece6c8;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content a {
-  color: rgba(74,74,74,0.7);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.dropdown-content a:hover {background-color: #f1f1f1;}
-.dropdown:hover .dropdown-content {display: block;}
-.active {background-color: #e0c54b;}
-.sp-cont {margin: 15px;}
-.hide {
-    display: none;
-}
-
-</style>
 <body>
 <!-- Menu bar -->
 <ul>
-  <li><a href="index.htm">Acasă</a></li>
+  <li><a class="active" href="index.htm">Acasă</a></li>
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Portofoliu &#128210;</a>
     <div class="dropdown-content">
@@ -104,12 +31,11 @@ li.dropdown {display: inline-block;}
       <a href="bannere.htm">Bannere</a>
       <a href="broderie.htm">Broderie</a>
       <a href="fanioane.htm">Fanioane</a>
-      <a href="http://www.360x.ro/">Tururi virtuale - Dan Nistor</a>
     </div>
   </li>
   <li><a href="listaPret.htm">Prețuri</a></li>
-  <li><a href="istoricComp.htm">Istoric companie &#8987;</a></li>
-  <li><a class="active" href="contact.htm">Contact &#128172;</a></li>
+  <li><a href="index.htm">Istoric companie &#8987;</a></li>
+  <li><a href="contact.htm">Contact &#128172;</a></li>
 </ul>
 
 <!-- !PAGE CONTENT! -->
@@ -119,10 +45,81 @@ li.dropdown {display: inline-block;}
 <div class="w3-opacity">
   <div class="w3-clear">
   </div>
-  <header class="w3-center">
-    <h1><i class="fa fa-address-card"></i> Comenzile se adresează către OTINEK Plus S.R.L. Bistriţa.<br> <i class="fa fa-phone"></i> Tel.: Marius-Tiberiu Telcean: 0742 780 601 </h1>
+  <header class="w3-center w3-margin-bottom">Tabel cu prețurile aproximative pentru
+    cele mai uzuale produse. <br><b>În construcție &#128736</b>
   </header>
 </div>
+
+<!-- Prices Table -->
+<table>
+  <tr>
+    <th>Produs</th>
+    <th>Bucăți</th>
+    <th>Preț/buc</th>
+    <th>Dimensiuni [mm]</th>
+    <th>Observații</th>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;" rowspan="2">Carte de vizită</td>
+    <td>< 500</td>
+    <td>25 bani (neplastificate) și 35 bani plastificate</td>
+  </tr>
+  <tr>
+    <td>>= 500</td>
+    <td>20 bani (neplastificate) și 30 bani plastificate</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Site serigrafice</td>
+    <td rowspan="3">< 3</td>
+    <td>80 lei</td>
+    <td>< 40x40 cm</td>
+  </tr>
+  <tr>
+    <td>150 lei</td>
+    <td>> 50x50 cm și < 80x80 cm</td>
+  </tr>
+<tr>
+  <td>200 lei</td>
+  <td>> 90x90 cm</td>
+</tr>
+  <tr>
+    <td>>= 4 </td>
+    <td>60/130/180 lei</td>
+    <td>Idem cazul < 3 buc.</td>
+  </tr>
+
+  <tr>
+    <td rowspan="3">Pixuri imprimate</td>
+    <td>< 300</td>
+    <td>40 bani/față imprimată</td>
+    <td rowspan="3"></td>
+    <td rowspan="3"><sup>1</sup></td>
+  </tr>
+
+  <tr>
+    <td>>=300 și < 1000</td>
+    <td>30 bani/față imprimată</td>
+    
+  </tr>
+
+  <tr>
+    <td>>= 1000</td>
+    <td>20 bani/față imprimată</td>
+    
+  </tr>
+  <tr>
+    <td>Legitimații</td>
+    
+  </tr>
+  <tr>
+    <td>Ecusoane</td>
+    
+  </tr>
+  <tr>
+    <td>Agende imprimate</td>
+  </tr>
+</table>
+<sup>1</sup>Pixuri italienești. Prețul unui astfel de pix este 1,2 lei. Pixurile se pot tipări pe 1 până la 4 fețe.
 
 <!-- End Page Content -->
 </div>
@@ -130,6 +127,9 @@ li.dropdown {display: inline-block;}
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
   <div class="w3-one">
+    <img src="assets/images/logo352x.535.png" class="img-cs" style="width: 20vw" alt="Koller sitting on a chair and painting.">
+    <div class="desc"><h3><b>Fotograful Koller</b></h3>
+      <p>Descriere Koller</p>
     </div>
   </div>
   <p>De-a lungul existenţei sale, compania a realizat tipografie, fotografie,
@@ -139,12 +139,12 @@ li.dropdown {display: inline-block;}
   şi alte materiale publicitare adaptate cerinţelor clientului.</p>
   <a href="https://www.facebook.com/telceanu.marius"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
   <a href="#"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  <p class="w3-medium"><b><></b> pe baza unui şablon <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <p class="w3-medium">Actualizat 20 ianuarie 2022</p>
+  <p class="w3-medium"><b><></b> pe baza <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p class="w3-medium">Actualizat 23 ianuarie 2022</p>
 </footer>
  
 <script>
 </script>
+
 </body>
 </html>
-   
