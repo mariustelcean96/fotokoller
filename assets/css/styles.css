@@ -4,10 +4,17 @@ body {
   }
   h2 {
     color: #656565; 
-    font-size: 28px; 
+    font-size: 1em; 
     margin-left: 5px;
   }
-  img {margin-bottom: -7px}
+  h3 {
+    font-size: .8em;
+  }
+  img {margin-bottom: -7px;
+  }
+  div.item img {
+    width: 50%;
+  }
   .w3-row-padding img {margin-bottom: 12px}
   div.desc {
     padding: 15px;
@@ -98,3 +105,75 @@ body {
     width: 100%;
     background-color: #ece6c8;
   }
+
+/*Javascript Facets CSS*/
+.facetsearch {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+.activeorderby,
+.activefacet {
+  color: red;
+}
+.bottomline {
+  padding: 10px 0 10px 0;
+  font-size: .8em;
+}
+.bottomline .orderby, 
+.bottomline .facettotalcount {
+  display: inline-block;
+}
+.bottomline .orderby ul,
+.bottomline .orderby li {
+  display: inline;
+  padding: 0;
+}
+.bottomline .orderby-title {
+  margin: 0 0 0 10px;
+}
+.bottomline .deselectstartover {
+  float: right;
+}
+#language {
+  width: 400px;
+}
+#language .facetlist{
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -o-column-count: 2;
+}
+.item {
+  width: 350px;
+  height: 250px;
+  margin: 0 10px 10px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.item h4 {
+  font-size: 1em;
+}
+
+.facetitem {
+  font-size: .7em;
+}
+
+.item .tags {
+  font-weight: bold;
+  color: gray;
+}
+
+#showmorebutton {
+border: 1px solid #AAA;
+border-radius: 15px;
+background-color: #DDD;
+margin: 0 auto;
+padding: 10px;
+width: 30%;
+display: block;
+text-align: center;
+cursor: pointer;
+}
+
