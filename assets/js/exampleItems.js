@@ -6,30 +6,51 @@
   */
     var example_items = [
       {
-        "firstname": "Vasile",
-        "lastname": "Mărginean",
-        "imageURL": "assets\\images\\mostre\\carti-vizita\\artist\\cvMargineanVasileSculptor1084x636.JPG",
-        "description": "Sculptor",
-        "category": "artist",
-        "an": "2000",
-        "company": "Limart 2000"
+        "firstname": "Mostra",
+        "lastname": "",
+        "imageURL": "",
+        "description": "",
+        "category": "",
+        "year": "",
+        "company": "Foto Koller",
+        "backgroundColor": "",
+        "foregroundColor": "",
+        "ID" : "1"
+      },/*
+      {
+        "firstname": "Mostra 1",
+        "lastname": "",
+        "imageURL": "",
+        "description": "",
+        "category": "",
+        "year": "",
+        "company": "Foto Koller",
+        "backgroundColor": "",
+        "foregroundColor": "",
+        "ID" : "1"
       },
       {
-        "firstname": "Marius-Tiberiu",
-        "lastname": "Telceanu",
-        "imageURL": "assets\\images\\mostre\\carti-vizita\\cv-personale\\cv-TelceanMT-2-1054x591.jpg",
-        "description": "modelul 2003 – 2006",
-        "category": "proprie",
-        "an": "2003",
-        "company": "Foto Koller"
+        "firstname": "Mostra 1",
+        "lastname": "",
+        "imageURL": "",
+        "description": "",
+        "category": "",
+        "year": "",
+        "company": "Foto Koller",
+        "backgroundColor": "",
+        "foregroundColor": "",
+        "ID" : "1"
       },
       {
-        "firstname": "Marius-Tiberiu",
-        "lastname": "Telceanu",
-        "imageURL": "assets\\images\\mostre\\carti-vizita\\cv-personale\\cv-TelceanMT1370x777.jpg",
-        "description": "modelul 2016 – prezent",
-        "category": "proprie",
-        "an": "2016",
-        "company": "Foto Koller"
-      }, 
+        "firstname": "Mostra 1",
+        "lastname": "",
+        "imageURL": "",
+        "description": "",
+        "category": "",
+        "year": "",
+        "company": "Foto Koller",
+        "backgroundColor": "",
+        "foregroundColor": "",
+        "ID" : "1"
+      },*/
     ];

@@ -1,12 +1,13 @@
 $(function(){
     var item_template = 
      '<div class="item">' +
-       '<img src="<%= obj.imageURL %>">' +
+       '<a href="<%= obj.imageURL %>"><img src="<%= obj.imageURL %>"></a>' +
        '<h4><%= obj.lastname %>, <%= obj.firstname %></h4>' + 
        '<p class="tags">' + 
        '<% if (obj.category) {  %><%= obj.category %><% } %>' +
        '<% if (obj.company) {  %>, <%= obj.company %><% } %>' +
-       '<% if (obj.an) {  %>, <%= obj.an %><% } %>' +
+       '<% if (obj.year) {  %>, <%= obj.year %><% } %>' +
+       ', <i><%= obj.ID %></i>' +
        '</p>' +
        '<p class="desc"><%= obj.description %></p>' +
      '</div>';
@@ -15,15 +16,17 @@ $(function(){
     facets           : { 
                         'category'     : 'Categorie',
                         'company'    : 'Companie',
-                        'an'     : 'An concepere'
+                        'year'     : 'An concepere',
+                        'backgroundColor' : 'Culoare fundal',
+                        'foregroundColor' : 'Culoare prim-plan'
   
     },  
     resultSelector   : '#results',
     facetSelector    : '#facets',
     resultTemplate   : item_template,
-    paginationCount  : 50,
-    orderByOptions   : {'firstname': 'First name', 'lastname': 'Last name', 'category': 'Category', 'RANDOM': 'Random'},
-    facetSortOption  : {'company': ["Foto Koller", "Limart 2000"]}
+    paginationCount  : 80,
+    orderByOptions   : {'firstname': 'Prenume', 'lastname': 'Nume', 'category': 'Categorie', 'RANDOM': 'Aleator'},
+    facetSortOption  : {'company': ["Foto Koller"]}
   }   
 
   // use them!
