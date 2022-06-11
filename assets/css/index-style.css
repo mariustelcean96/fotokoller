@@ -1,0 +1,42 @@
+.index-container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 3rem 0;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sampleSlides {
+    display: none;
+}
+
+.slideshow {
+    max-height: 500px;
+    min-height: 500px;
+}
+
+.slideshow img {
+    max-height: inherit;
+}
+
+.toTheSamples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    font-size: 1.2rem;
+    color: rgba(74,74,74,0.7);
+}
+
+.toTheSamples a {
+    text-decoration: none;
+    background-color: #ece6c8;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.toTheSamples a:hover {
+    color: rgb(252, 252, 252);
+    background-color: #706108;
+}
