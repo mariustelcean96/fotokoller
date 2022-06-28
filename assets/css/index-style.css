@@ -26,7 +26,6 @@
     align-items: center;
     gap: 14px;
     font-size: 1.2rem;
-    color: rgba(74,74,74,0.7);
 }
 
 .toTheSamples a {
@@ -37,6 +36,6 @@
 }
 
 .toTheSamples a:hover {
-    color: rgb(252, 252, 252);
-    background-color: #706108;
+    color: #3D3D3D;
+    background-color: #ebd46d;
 }

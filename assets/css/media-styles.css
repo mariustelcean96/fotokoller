@@ -11,6 +11,10 @@
       gap: 8px;
     }
 
+    .slideshow img {
+      width: 100%;
+    }
+
     .title-span {
       margin: 16px 8px 16px 8px;
     }

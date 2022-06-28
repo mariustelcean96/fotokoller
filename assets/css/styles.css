@@ -46,7 +46,7 @@ body {
 li a, .dropbtn {
   text-decoration: none;
   text-align: center;
-  padding: 1.1em;
+  padding: 1.1vh;
   color: #3D3D3D;
   font-size: 1em;
   font-weight: bold;
@@ -253,5 +253,9 @@ height: fit-content;
 footer img {
   max-width: 300px;
   border-radius: 4px;
+}
+
+footer p {
+  font-size: 16px;
 }
 
