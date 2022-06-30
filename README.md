@@ -10,7 +10,7 @@ https://eikes.github.io/facetedsearch/
 
 The author did a great work. My inital search for a way to filter the
 samples returned only basic methods (ways to filter using only one
-criteria), but that wasn't enough.
+criterion), but that wasn't enough.
 
 I managed to adapt the method to my needs. 
 
