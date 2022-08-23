@@ -42,6 +42,7 @@
           "firstname": "Oswald",
           "lastname": "Curcă",
           "imageURL": "assets\\images\\mostre\\calendare\\calen-OtinekSport-2-1500x1071-2001.png",
+          "altText": "Modelul 2 de calendar sportiv. Om alergând cu o torță în mâna dreaptă. Sub, un calendar.",
           "description": "calendar sportiv",
           "category": "sport",
           "year": "2000",

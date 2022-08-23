@@ -51,6 +51,24 @@
           "company": "Buderus Guss",
         },
         {
+          "firstname": "",
+          "lastname": "",
+          "imageURL": "assets\\images\\mostre\\filmeSerigrafice\\filmDekA-1998-450x119.PNG",
+          "description": "DEK",
+          "category": "",
+          "year": "1998",
+          "company": "DEK",
+        },
+        {
+          "firstname": "",
+          "lastname": "",
+          "imageURL": "assets\\images\\mostre\\filmeSerigrafice\\film-Dracula-1999-660x787.PNG",
+          "description": "Dracula logo",
+          "category": "",
+          "year": "1999",
+          "company": "",
+        },
+        {
           "firstname": "Mostra",
           "lastname": "",
           "imageURL": "",
@@ -62,30 +80,6 @@
           "foregroundColor": "",
           "ID" : "1"
         },/*
-        {
-          "firstname": "Mostra",
-          "lastname": "",
-          "imageURL": "",
-          "description": "",
-          "category": "",
-          "year": "",
-          "company": "Foto Koller",
-          "backgroundColor": "",
-          "foregroundColor": "",
-          "ID" : "1"
-        },
-        {
-          "firstname": "Mostra",
-          "lastname": "",
-          "imageURL": "",
-          "description": "",
-          "category": "",
-          "year": "",
-          "company": "Foto Koller",
-          "backgroundColor": "",
-          "foregroundColor": "",
-          "ID" : "1"
-        },
         {
           "firstname": "Mostra",
           "lastname": "",
