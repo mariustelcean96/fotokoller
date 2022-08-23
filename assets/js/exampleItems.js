@@ -9,13 +9,13 @@
         "firstname": "Mostra",
         "lastname": "",
         "imageURL": "",
+        "altText": "",
         "description": "",
         "category": "",
         "year": "",
         "company": "Foto Koller",
         "backgroundColor": "",
         "foregroundColor": "",
-        "ID" : "1"
       },/*
       {
         "firstname": "Mostra 1",

@@ -1,7 +1,7 @@
 $(function(){
     var item_template = 
      '<div class="item">' +
-       '<a href="<%= obj.imageURL %>"><img src="<%= obj.imageURL %>"></a>' +
+       '<a href="<%= obj.imageURL %>"><img alt="<%= obj.altText %>" src="<%= obj.imageURL %>"></a>' +
        '<h4><%= obj.lastname %>, <%= obj.firstname %></h4>' + 
        '<p class="tags">' + 
        '<% if (obj.category) {  %><%= obj.category %><% } %>' +
