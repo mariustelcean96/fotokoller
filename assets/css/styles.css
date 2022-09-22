@@ -143,6 +143,15 @@ button {
 
 #results .item a img {
   max-width: inherit;
+  box-shadow: -3px -3px 9px rgb(80, 80, 80);
+  /* Make images occupy space before being loaded. In test.
+  min-height: 300px;
+  height: fit-content;
+  width: 300px;*/
+}
+
+#results .item a img:hover {
+  transform: scale(1.01);
 }
 
 /*Javascript Facets CSS*/
@@ -207,6 +216,10 @@ button {
 .item img {
   background-color: white;
   min-width: 300px;
+  border: 4px solid white;
+  box-sizing: border-box;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .item h4, 
