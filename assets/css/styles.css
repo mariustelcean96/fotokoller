@@ -112,7 +112,7 @@ button {
 }
 
 /* Content */
-.title-span {
+.title-span, h2 {
   margin: 28px 0 28px 0;
   padding: 0px 18px;
   align-self: center;
