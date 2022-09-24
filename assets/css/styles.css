@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
 body {
   display: flex;
   flex-direction: column;
@@ -19,13 +20,22 @@ body {
 
 .logo-bar {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.logo-bar span {
+.logo-bar .logo-title {
   font-family: 'Great Vibes', cursive;
   font-size: 2.9em;
+}
+
+.logo-bar .sub-logo-title {
+  font-family: 'Arima', cursive;
+  font-weight: 800;
+  font-size: 1.4em;
+  margin-left: 85px;
+  margin-top: -15px;
 }
 
 .navigation {
