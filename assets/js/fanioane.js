@@ -6,6 +6,18 @@
   */
     var example_items = [
         {
+          "firstname": "Oswald",
+          "lastname": "Curcă",
+          "imageURL": "assets\\images\\mostre\\fanioane\\fanOtinekSport-2001-662x580.png",
+          "altText": "Textul Falken Bier",
+          "description": "Model, fanion comercial crem pentru Otinek-Sport. Față/verso",
+          "category": "imprimerie sportivă",
+          "year": "2001",
+          "company": "Otinek-Sport",
+          "backgroundColor": "crem",
+          "foregroundColor": "mix",
+        },
+        {
           "firstname": "",
           "lastname": "F.C. Gloria Bistrița",
           "imageURL": "assets\\images\\mostre\\fanioane\\fanFCGloriaBta-326x702.jpg",
@@ -57,7 +69,7 @@
           "category": "imprimerie sportivă",
           "year": "2000",
           "company": "Otinek-Sport",
-          "backgroundColor": "alb",
+          "backgroundColor": "albastru",
           "foregroundColor": "mov",
         },
         {

@@ -345,5 +345,6 @@ function showMoreResults() {
   }
   $(settings.resultSelector).trigger("facetedsearchresultupdate");
 }
-
 })();
+
+
