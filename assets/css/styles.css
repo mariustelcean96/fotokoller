@@ -170,7 +170,7 @@ button {
 
 .activeorderby,
 .activefacet {
-  color: red;
+  font-weight: 800;
 }
 
 .bottomline .orderby,
@@ -237,6 +237,7 @@ button {
 
 .facetitem {
   font-size: 1em;
+  text-align: center;
 }
 
 .item .tags {
