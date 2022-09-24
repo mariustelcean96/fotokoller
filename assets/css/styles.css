@@ -226,7 +226,7 @@ button {
 .item img {
   background-color: white;
   min-width: 300px;
-  border: 4px solid white;
+  border: 4px solid #f5f4ef;
   box-sizing: border-box;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
